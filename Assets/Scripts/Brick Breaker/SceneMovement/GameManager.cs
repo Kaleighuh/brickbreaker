@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     private void LoadLevel(int level)
     {
         this.level = level;
+
+        SceneManager.LoadScene("Level" + level);
     }
     void Update()
     {
