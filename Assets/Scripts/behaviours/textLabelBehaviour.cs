@@ -3,11 +3,12 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Globalization;
 
-public class TextLabelBehavour : MonoBehaviour
+public class TextLabelBehaviour : MonoBehaviour
 {
     public Text label;
     public UnityEvent startEvent;
     public UnityEvent onClick;
+    public UnityEvent onCollision;
 
     private void Start()
     {
@@ -25,8 +26,8 @@ public class TextLabelBehavour : MonoBehaviour
         label.text = obj.value.ToString(CultureInfo.InvariantCulture);
     }
     
-    private void onClickEnter()
+    private void onCollisionEnter()
     {
-        onClick.Invoke();
+        onCollision.Invoke();
     }
 }

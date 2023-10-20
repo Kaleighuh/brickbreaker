@@ -42,6 +42,11 @@ public class Brick : MonoBehaviour
         if (health <= 0)
         {
             gameObject.SetActive(false);
+			ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+            if (scoreManager != null)
+            {
+                scoreManager.AddScore(100);
+            }
         }
         else
         {
