@@ -8,7 +8,7 @@ public class PongBall : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
-        _rigidbody.bounciness = 1.0f;
+        //_rigidbody.bounciness = 1.0f;
     }
     private void Start()
     {
