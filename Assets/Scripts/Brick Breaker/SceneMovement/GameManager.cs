@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public Ball ball { get; private set; }
     public Paddle paddle { get; private set; }
     public Brick[] bricks { get; private set; }
-    private int _computerScore;
+    private int _playerScore;
     public int level = 1;
     public int score = 0;
     public int lives = 3;

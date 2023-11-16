@@ -17,11 +17,11 @@ public class RightPlayerPongPaddle : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.I))
         {
             this.direction = Vector3.up;
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.K))
         {
             this.direction = Vector3.down;
         }
