@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public Ball ball { get; private set; }
     public Paddle paddle { get; private set; }
     public Brick[] bricks { get; private set; }
-
+    private int _computerScore;
     public int level = 1;
     public int score = 0;
     public int lives = 3;
@@ -53,6 +53,11 @@ public class GameManager : MonoBehaviour
         ball = FindObjectOfType<Ball>();
         paddle = FindObjectOfType<Paddle>();
         bricks = FindObjectsOfType<Brick>();
+    }
+
+    public void PlayerScores()
+    {
+        _playerScore++;
     }
 
     public void Miss()

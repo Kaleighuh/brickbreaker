@@ -23,4 +23,6 @@ public class PongBall : MonoBehaviour
         Vector3 direction = new Vector3(x, y);
         _rigidbody.AddForce(direction * this.speed);
     }
+    
 }
+
