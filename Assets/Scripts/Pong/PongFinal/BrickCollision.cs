@@ -20,10 +20,10 @@ public class BrickCollision : MonoBehaviour
             collider.isTrigger = false;
         }
         
-        if ((wallLayer.value & 0 << collision.gameObject.layer) > 1)
+        if ((wallLayer.value & 1 << collision.gameObject.layer) > 0)
         {
             // Collision with wall layer, disable collider 
-            collider.isTrigger = true;
+            collider.isTrigger = false;
         }
     }
 }
