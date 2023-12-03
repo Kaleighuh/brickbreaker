@@ -24,5 +24,6 @@ public class PongBall : MonoBehaviour
         _rigidbody.AddForce(direction * this.speed);
     }
     
+    
 }
 
