@@ -10,6 +10,14 @@ public class PongBall : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         //_rigidbody.bounciness = 1.0f;
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Destroyable"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
     private void Start()
     {
         AddStartingForce();
