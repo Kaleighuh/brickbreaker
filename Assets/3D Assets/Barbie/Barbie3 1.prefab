@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3450700075358320400}
   - component: {fileID: 578622557254943706}
   - component: {fileID: -6032445348152303583}
-  - component: {fileID: -4064779691151655835}
+  - component: {fileID: -988393298861401098}
+  - component: {fileID: 5220429884634462961}
   m_Layer: 0
   m_Name: Barbie3 1
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371155142062776847}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.798191, y: -2.1748223, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101,8 +102,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!65 &-4064779691151655835
-BoxCollider:
+--- !u!64 &-988393298861401098
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111,6 +112,19 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.01, z: 0.01}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3647052958532574651, guid: 5412820cc9b3a1246bcd27f468a12418, type: 3}
+--- !u!114 &5220429884634462961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371155142062776847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97afd9ac5076f6642b914c45f6293dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

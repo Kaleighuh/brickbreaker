@@ -691,6 +691,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391024672}
     m_Modifications:
+    - target: {fileID: -8552465730341096872, guid: 4602cdbb748924243b2b8f5c04e5b652, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8552465730341096872, guid: 4602cdbb748924243b2b8f5c04e5b652, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8552465730341096872, guid: 4602cdbb748924243b2b8f5c04e5b652, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: ff63e8c90410f364993fa2c2c5a5e4d6, type: 2}
+    - target: {fileID: -8552465730341096872, guid: 4602cdbb748924243b2b8f5c04e5b652, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateValue
+      objectReference: {fileID: 0}
+    - target: {fileID: -8552465730341096872, guid: 4602cdbb748924243b2b8f5c04e5b652, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateValue
+      objectReference: {fileID: 0}
+    - target: {fileID: -8552465730341096872, guid: 4602cdbb748924243b2b8f5c04e5b652, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3788782466716216368, guid: 4602cdbb748924243b2b8f5c04e5b652, type: 3}
       propertyPath: m_Name
       value: Brick (2)

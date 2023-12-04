@@ -17,13 +17,13 @@ public class BrickCollision : MonoBehaviour
         if ((ballLayer.value & 1 << collision.gameObject.layer) > 0)
         {
             // Collision with ball layer, enable collider
-            collider.isTrigger = false;
+            //collider.isTrigger = false;
         }
         
         if ((wallLayer.value & 1 << collision.gameObject.layer) > 0)
         {
             // Collision with wall layer, disable collider 
-            collider.isTrigger = false;
+            //collider.isTrigger = false;
         }
     }
 }

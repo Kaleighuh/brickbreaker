@@ -5,7 +5,7 @@ public class Spawn : MonoBehaviour
 {
     public GameObject[] cubePrefabs;
     public float speed = 1f;
-    
+
     List<GameObject> spawnedCubes = new List<GameObject>();
 
     void Start()
@@ -28,12 +28,14 @@ public class Spawn : MonoBehaviour
         spawnedCubes.Add(obj);
     }
 
-    public void OnCollision(Collision col)
+    /*public void OnCollision(Collision col)
     {
         if (col.gameObject.name == "Ball")
         {
             Destroy(col.gameObject);
             spawnedCubes.Remove(col.gameObject);
         }
-    }
+
+        if (col.gameObject.)
+    }*/
 }
