@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2704688119001748030}
   - component: {fileID: 174528548546111220}
   - component: {fileID: 3080730186676910635}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FinEarth5
   m_TagString: Untagged
   m_Icon: {fileID: 0}

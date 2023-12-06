@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1496972655675151311}
   - component: {fileID: -2966741109621175509}
   - component: {fileID: -1547417159560316469}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FinBarbie1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
