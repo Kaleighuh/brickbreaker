@@ -8,6 +8,13 @@ public class TouchManagerScript : MonoBehaviour
     private PlayerInput playerInput;
     private InputAction touchPositionAction;
     private InputAction touchPressAction;
+    private bool isDragging;
+    private Vector3 startPosition;
+    
+    void Start()
+    {
+        startPosition = player.transform.position; 
+    }
     private void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -18,6 +25,8 @@ public class TouchManagerScript : MonoBehaviour
     private void OnEnable()
     {
         touchPressAction.performed += TouchPressed;
+        touchPressAction.performed += StartDrag;
+        touchPressAction.canceled += EndDrag;
     }
 
     private void OnDisable()
@@ -32,6 +41,15 @@ public class TouchManagerScript : MonoBehaviour
         player.transform.position = position;
 
     }
+    private void StartDrag(InputAction.CallbackContext context)
+    {
+        isDragging = true;
+    }
+
+    private void EndDrag(InputAction.CallbackContext context)  
+    {
+        isDragging = false;
+    }
 
     private void Update()
     {
@@ -41,5 +59,21 @@ public class TouchManagerScript : MonoBehaviour
             position.z = player.transform.position.z;
             player.transform.position = position;
         }
+        if (isDragging) 
+        {
+            Vector2 inputPos = touchPositionAction.ReadValue<Vector2>();
+
+            if (inputPos == Vector2.zero) 
+            {  
+                inputPos = Mouse.current.position.ReadValue(); 
+            }
+    
+            var worldPos = startPosition;
+            worldPos.y = Camera.main.ScreenToWorldPoint(inputPos).y;
+
+            player.transform.position = worldPos;
+            
+        }
     }
+    
 }
