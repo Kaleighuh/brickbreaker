@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5316920338696372253}
   - component: {fileID: 7939153078628709591}
   - component: {fileID: 6903935016213100893}
+  - component: {fileID: 4408802952314574977}
   m_Layer: 7
   m_Name: FinEarth2
   m_TagString: Untagged
@@ -100,3 +101,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!64 &4408802952314574977
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8443534453064815874}
+  m_Material: {fileID: 13400000, guid: 09d30278ebb293a4aaf05fa78fc51d9f, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3647052958532574651, guid: d5b798e9e18e56b40a639f6817c41ee4, type: 3}
