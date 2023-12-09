@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5166457308386576272}
   - component: {fileID: -9031576931740236738}
   - component: {fileID: 2226671696404348058}
+  - component: {fileID: -413081988825851166}
   m_Layer: 7
   m_Name: FinBlack4
   m_TagString: Destroyable
@@ -115,3 +116,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3647052958532574651, guid: acd60e4e554d4b04ca04fb67a68a64e9, type: 3}
+--- !u!65 &-413081988825851166
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679416576333440581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029999997, y: 0.029999997, z: 0.01}
+  m_Center: {x: -0.01, y: -0.01, z: 0}

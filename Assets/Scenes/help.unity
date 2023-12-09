@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 50322205}
   - component: {fileID: 50322206}
+  - component: {fileID: 50322208}
   m_Layer: 0
   m_Name: BlackSpawner (1)
   m_TagString: Untagged
@@ -174,6 +175,19 @@ MonoBehaviour:
   - {fileID: 6679416576333440581, guid: eb60c243452974647ab4a7674fdfbf58, type: 3}
   - {fileID: 4655772684673413178, guid: f969ca93308763447980c5617afc9ac2, type: 3}
   speed: 1
+--- !u!65 &50322208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50322204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &185558962
 GameObject:
   m_ObjectHideFlags: 0
