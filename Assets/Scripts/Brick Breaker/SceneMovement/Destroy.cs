@@ -1,33 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+/*using UnityEngine;
 
 public class Destroy : MonoBehaviour 
 {
+    public GameObject spawner;
+    private SpawnerLogic spawnerLogic;
+    public int pointsPerObject = 10;
+
+    private int points;
+
+    void start()
+    {
+        spawnerLogic = spawnerLogic.Getcomponent<SpawnerLogic>();
+    }
 
     void OnCollisionEnter(Collision collision) 
     {
-        DestroyObject(collision.gameObject);
-    }
-
-    void DestroyObject(GameObject obj) 
-    {
-        if (IsDestroyable(obj)) {
-            Destroy(obj);
-            GivePoints();
+        if(hit spawn object)
+        {
+            Destroy(collision.gameObject);  
+            points += pointsPerObject;
+            spawnerLogic.ObjectDestroyed();
         }
     }
 
-    bool IsDestroyable(GameObject obj) 
+    void Update()
     {
-        // Check if object meets destroyable criteria 
-        // E.g. layer mask, component, object name
-
-        return destroyableObjects.Contains(obj); 
+        // Display points for example
+        Debug.Log("Points: " + points);  
     }
-
-    void GivePoints() 
-    {
-        score += 10;
-    }
-}
+}*/
