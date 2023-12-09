@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Destroyable
   - SpawnedObject
+  - Ball
   layers:
   - Default
   - TransparentFX

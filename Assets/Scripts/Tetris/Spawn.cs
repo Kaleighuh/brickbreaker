@@ -5,8 +5,10 @@ public class Spawn : MonoBehaviour
 {
     public GameObject[] cubePrefabs;
     public float speed = 1f;
+    public GameObject destroyerObject;
 
     List<GameObject> spawnedCubes = new List<GameObject>();
+    public Score score;
 
     void Start()
     {
@@ -28,14 +30,16 @@ public class Spawn : MonoBehaviour
         spawnedCubes.Add(obj);
     }
 
-    /*public void OnCollision(Collision col)
+    void OnTriggerEnter(Collider other)
     {
-        if (col.gameObject.name == "Ball")
+        if (other.gameObject == destroyerObject)
         {
-            Destroy(col.gameObject);
-            spawnedCubes.Remove(col.gameObject);
-        }
+            //score.currentScore += 10;
+            ScoreManager.instance.AddPoint();
+            Destroy(gameObject);
 
-        if (col.gameObject.)
-    }*/
+            // Also remove from spawnedCubes list
+            spawnedCubes.Remove(gameObject);
+        }
+    }
 }

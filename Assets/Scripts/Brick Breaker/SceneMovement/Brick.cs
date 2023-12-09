@@ -42,7 +42,7 @@ public class Brick : MonoBehaviour
         if (health <= 0)
         {
             gameObject.SetActive(false);
-			ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+            /*ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
             if (scoreManager != null)
             {
                 scoreManager.AddScore(100);
@@ -58,14 +58,15 @@ public class Brick : MonoBehaviour
         if (gameManager != null)
         {
             gameManager.Hit(this);
+        }*/
         }
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ball"))
+        /*public void OnCollisionEnter(Collision collision)
         {
-            Hit();
-        }
+            if (collision.gameObject.CompareTag("Ball"))
+            {
+                Hit();
+            }
+        }*/
     }
 }

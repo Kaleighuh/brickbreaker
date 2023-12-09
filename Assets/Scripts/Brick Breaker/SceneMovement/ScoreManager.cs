@@ -1,30 +1,30 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public Text scoreText;
+    public static ScoreManager instance;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI highscoreText;
     private int score = 0;
+    private int highscore = 0;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
+        scoreText.text = score.ToString() + "POINTS:";
+        highscoreText.text = "HIGHSCORE:" + highscore.ToString();
         // Initialize the score text.
-        UpdateScoreText();
+        //UpdateScoreText();
     }
 
-    // Call this method to add points to the score.
-    public void AddScore(int points)
+    public void AddPoint()
     {
-        score += points;
-        UpdateScoreText();
-    }
-
-    // Update the score text UI.
-    private void UpdateScoreText()
-    {
-        if (scoreText != null)
-        {
-            scoreText.text = "Score: " + score.ToString();
-        }
+        score += 10;
+        scoreText.text = score.ToString() + "POINTS:";
     }
 }
