@@ -23,7 +23,7 @@ public class Spawn : MonoBehaviour
         int index = Random.Range(0, cubePrefabs.Length);
 
         Quaternion rot = Quaternion.Euler(90f, 0, 0);
-        Vector3 spawnPos = new Vector3(Random.Range(-6f, 6f), transform.position.y, transform.position.z); 
+        Vector3 spawnPos = new Vector3(Random.Range(-4f, 4f), transform.position.y, transform.position.z); 
         GameObject obj = Instantiate(cubePrefabs[index], spawnPos, Quaternion.identity); 
         spawnedCubes.Add(obj);
     }
