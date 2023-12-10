@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3462032412257816727}
   - component: {fileID: 3462032412257816726}
   - component: {fileID: 3462032412257816731}
-  - component: {fileID: 3462032412257816732}
   - component: {fileID: 3462032412257816733}
   m_Layer: 3
   m_Name: ball
@@ -130,21 +129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 200
---- !u!114 &3462032412257816732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3462032412257816724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0140ebb3653e4cf41911ed624d878d82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &3462032412257816733
 MonoBehaviour:
   m_ObjectHideFlags: 0

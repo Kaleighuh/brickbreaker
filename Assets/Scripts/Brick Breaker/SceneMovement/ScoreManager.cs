@@ -6,9 +6,9 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI highscoreText;
+    //public TextMeshProUGUI highscoreText;
     private int score = 0;
-    private int highscore = 0;
+    //private int highscore = 0;
 
     private void Awake()
     {
@@ -16,15 +16,26 @@ public class ScoreManager : MonoBehaviour
     }
     private void Start()
     {
-        scoreText.text = score.ToString() + "POINTS:";
-        highscoreText.text = "HIGHSCORE:" + highscore.ToString();
+        score = 0;
+        //scoreText.text = score.ToString() + "POINTS:";
+        //highscoreText.text = "HIGHSCORE:" + highscore.ToString();
         // Initialize the score text.
         //UpdateScoreText();
     }
 
-    public void AddPoint()
+    public void AddPoints(int newScore)
     {
-        score += 10;
-        scoreText.text = score.ToString() + "POINTS:";
+        score += newScore;
+        //scoreText.text = score.ToString() + "POINTS:";
+    }
+
+    public void UpdateScore()
+    {
+        scoreText.text = "Score: 0" + score;
+    }
+
+    void Update()
+    {
+        UpdateScore();
     }
 }

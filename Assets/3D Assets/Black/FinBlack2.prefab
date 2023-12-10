@@ -111,7 +111,7 @@ MeshCollider:
   m_GameObject: {fileID: 4083218290756437671}
   m_Material: {fileID: 13400000, guid: 09d30278ebb293a4aaf05fa78fc51d9f, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -124,7 +124,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4083218290756437671}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.02, z: 0.01}

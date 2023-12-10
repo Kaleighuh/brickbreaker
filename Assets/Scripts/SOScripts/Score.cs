@@ -4,16 +4,11 @@ using UnityEngine;
 public class Score : ScriptableObject
 {
     public int currentScore;
-    public int highScore;
 
     public void AddPoints(int points)
     {
         currentScore += points;
-
-        if(currentScore > highScore)
-        {
-            highScore = currentScore;
-        }
+        
     }
 
     public void ResetScore()

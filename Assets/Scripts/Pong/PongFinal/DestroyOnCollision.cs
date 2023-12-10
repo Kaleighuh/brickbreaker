@@ -18,7 +18,7 @@ public class DestroyOnCollision : MonoBehaviour
 
                 if (obj != null && collision.gameObject == obj) {
 
-                    Destroy(obj);
+                    //Destroy(obj);
 
                     if (scoreText != null) { 
                         score += 10;
