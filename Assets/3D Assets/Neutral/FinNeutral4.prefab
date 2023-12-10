@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3108738711824875916}
   m_Layer: 7
   m_Name: FinNeutral4
-  m_TagString: Untagged
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

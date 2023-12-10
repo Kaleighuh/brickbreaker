@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 115627410442910836}
   - component: {fileID: 1358842253001953515}
   - component: {fileID: 5092530928260217847}
-  - component: {fileID: -3460026643549492385}
   m_Layer: 7
   m_Name: FinBarbie2
-  m_TagString: Untagged
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,15 +115,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3647052958532574651, guid: 49e4a9bc90aa5f34aa825e95f178f03f, type: 3}
---- !u!114 &-3460026643549492385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916905014393101729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97afd9ac5076f6642b914c45f6293dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -1,18 +1,18 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Events;
 using System.Globalization;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
+using TMPro;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class TextLabelBehaviour : MonoBehaviour
 {
-    public Text label;
+    private TextMeshProUGUI label;
     public UnityEvent startEvent;
-    public UnityEvent onClick;
-    public UnityEvent onCollision;
 
     private void Start()
     {
-        label = GetComponent<Text>();
+        label = GetComponent<TextMeshProUGUI>();
         startEvent.Invoke();
     }
 
@@ -24,10 +24,5 @@ public class TextLabelBehaviour : MonoBehaviour
     public void UpdateLabel(IntData obj)
     {
         label.text = obj.value.ToString(CultureInfo.InvariantCulture);
-    }
-    
-    private void onCollisionEnter()
-    {
-        onCollision.Invoke();
     }
 }

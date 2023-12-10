@@ -7,8 +7,6 @@ public class Spawn : MonoBehaviour
     public GameObject[] cubePrefabs;
     public float speed = 1f;
     public GameObject destroyerObject;
-    public ScoreManager score;
-    //public SpawnerStats spawnerStats;
     public UnityEvent ScoreEvent;
 
     List<GameObject> spawnedCubes = new List<GameObject>();
@@ -22,8 +20,8 @@ public class Spawn : MonoBehaviour
 
     void SpawnRandomCube() {
         if(spawnedCubes.Count >= 10) {
-            //Destroy(spawnedCubes[0]); 
-            //spawnedCubes.RemoveAt(0);
+            Destroy(spawnedCubes[0]); 
+            spawnedCubes.RemoveAt(0);
         }
        
         
@@ -35,19 +33,4 @@ public class Spawn : MonoBehaviour
         spawnedCubes.Add(obj);
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        //spawnerStats.CubeDestroyed();
-        if (other.gameObject == destroyerObject)
-        {
-            //score.currentScore += 10;
-            //ScoreManager.instance.AddPoint();
-            ScoreEvent.Invoke();
-            //Destroy(gameObject);
-            Debug.Log("Destroy");
-            // Also remove from spawnedCubes list
-            //spawnedCubes.Remove(gameObject);
-        }
-    }
-    
 }

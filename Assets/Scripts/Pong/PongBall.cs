@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PongBall : MonoBehaviour
 {
     private Rigidbody _rigidbody;
     public float speed = 200.00f;
+    public UnityEvent destroyEvent;
 
     private void Awake()
     {
@@ -15,6 +17,7 @@ public class PongBall : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Destroyable"))
         {
+            destroyEvent.Invoke();
             Destroy(other.gameObject);
         }
     }
